@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+	<title>superDOM</title>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css" />
+</head>
+<body>
+	<div id="mocha">
+		<p><a href="#">Index</a></p>
+	</div>
+	<div id="messages"></div>
+	<div id="fixtures"></div>
+	<div class="dummy-elements" style="display:none">
+		<div class="classification">select by class</div>
+		<div id="identification">select by Id</div>
+		<ul class="items">
+			<li class="item">1</li>
+			<li class="item">2</li>
+			<li class="item">3</li>
+			<li class="item">4</li>
+			<li class="item">5</li>
+		</ul>
+	</div>
+	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+	<script src="../src/dom.js"></script>
+	<script>mocha.setup('bdd')</script>
+	<script src="./dom.js"></script>
+	<script>mocha.run()</script>
+</body>
+</html>
